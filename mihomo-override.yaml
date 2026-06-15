@@ -16,15 +16,23 @@ proxy-groups:
       ]
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 80
+    tolerance: 100
 
   - name: PROXY
     type: url-test
     include-all: true
-    exclude-filter: "^HARBOUR$"
+    exclude-filter: "^海港人寿$"
     url: https://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 80
+    tolerance: 100
+
+  - name: HARBOUR
+    type: url-test
+    include-all: true
+    filter: "海港人寿"
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 100
 
 rules:
   - RULE-SET,applications,DIRECT
@@ -101,5 +109,3 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
     path: ./ruleset/applications.yaml
     interval: 86400
-
-

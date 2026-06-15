@@ -21,6 +21,7 @@ proxy-groups:
   - name: PROXY
     type: url-test
     include-all: true
+    exclude-filter: "^HARBOUR$"
     url: https://www.gstatic.com/generate_204
     interval: 300
     tolerance: 80
@@ -28,12 +29,12 @@ proxy-groups:
 rules:
   - RULE-SET,applications,DIRECT
   - RULE-SET,private,DIRECT
-#  - RULE-SET,reject,REJECT
+  - RULE-SET,reject,REJECT
 
   - RULE-SET,ai,AI
 
   - RULE-SET,custom-proxy,PROXY
-  - RULE-SET,harbour-proxy,my-socks
+  - RULE-SET,harbour-proxy,HARBOUR
 
   - RULE-SET,gfw,PROXY
   - RULE-SET,telegramcidr,PROXY
@@ -66,20 +67,13 @@ rule-providers:
     path: ./ruleset/ai.mrs
     interval: 86400
 
-#  reject:
-#    type: http
-#    behavior: domain
-#    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-#    path: ./ruleset/reject.yaml
-#    interval: 86400
+  reject:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
 
-#  proxy:
-#    type: http
-#    behavior: domain
-#    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-#    path: ./ruleset/proxy.yaml
-#    interval: 86400
-#
   private:
     type: http
     behavior: domain

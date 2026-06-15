@@ -1,0 +1,8 @@
+prepend: []
+append:
+  - name: 'HARBOUR'
+    type: 'socks5'
+    server: '192.168.31.3'
+    port: 1081
+    udp: true
+delete: []

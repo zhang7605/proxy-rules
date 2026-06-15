@@ -1,0 +1,5 @@
+payload:
+  - DOMAIN-SUFFIX,harbourlife.com.cn
+  - DOMAIN-SUFFIX,evergrandelife.com.cn
+  - IP-CIDR,10.163.0.0/16,no-resolve
+  - IP-CIDR,10.155.0.0/16,no-resolve

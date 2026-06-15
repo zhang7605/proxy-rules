@@ -33,6 +33,7 @@ rules:
   - RULE-SET,ai,AI
 
   - RULE-SET,custom-proxy,PROXY
+  - RULE-SET,harbour-proxy,my-socks
 
   - RULE-SET,gfw,PROXY
   - RULE-SET,telegramcidr,PROXY
@@ -47,6 +48,14 @@ rule-providers:
     format: yaml
     url: "https://gitee.com/kain-zhang/proxy-rules/raw/master/custom-proxy.yaml"
     path: ./ruleset/custom-proxy.yaml
+    interval: 86400
+
+  harbour-proxy:
+    type: http
+    behavior: classical
+    format: yaml
+    url: "https://gitee.com/kain-zhang/proxy-rules/raw/master/harbour-proxy.yaml"
+    path: ./ruleset/harbour-proxy.yaml
     interval: 86400
 
   ai:

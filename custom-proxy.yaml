@@ -3,3 +3,5 @@ payload:
   - DOMAIN-SUFFIX,sub.v1.mk
   - DOMAIN-SUFFIX,npmjs.org
   - DOMAIN-SUFFIX,gate.com
+  - DOMAIN-SUFFIX,perchance.org
+  - DOMAIN-SUFFIX,nastia.ai

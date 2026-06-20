@@ -1,9 +1,11 @@
 payload:
   - DOMAIN-SUFFIX,npmjs.org
   - DOMAIN-SUFFIX,nodejs.org
+  - DOMAIN-SUFFIX,pypi.org,PROXY
+  - DOMAIN-SUFFIX,pythonhosted.org,PROXY
+  - DOMAIN-SUFFIX,gate.com
   - DOMAIN-SUFFIX,xn--4gq62f52gdss.com
   - DOMAIN-SUFFIX,sub.v1.mk
-  - DOMAIN-SUFFIX,gate.com
   - DOMAIN-SUFFIX,perchance.org
   - DOMAIN-SUFFIX,nastia.ai
   - DOMAIN-SUFFIX,crushon.ai

@@ -1,9 +1,4 @@
 payload:
-  - DOMAIN-SUFFIX,npmjs.org
-  - DOMAIN-SUFFIX,nodejs.org
-  - DOMAIN-SUFFIX,pypi.org,PROXY
-  - DOMAIN-SUFFIX,pythonhosted.org,PROXY
-  - DOMAIN-SUFFIX,gate.com
   - DOMAIN-SUFFIX,xn--4gq62f52gdss.com
   - DOMAIN-SUFFIX,sub.v1.mk
   - DOMAIN-SUFFIX,perchance.org
@@ -11,7 +6,6 @@ payload:
   - DOMAIN-SUFFIX,crushon.ai
   - DOMAIN-SUFFIX,pixai.art
   - DOMAIN-SUFFIX,analytics.ahrefs.com
-  - DOMAIN-SUFFIX,imagedelivery.net
   - DOMAIN-SUFFIX,bkmm.net
   - DOMAIN-SUFFIX,bkmh.me
-  - DOMAIN-SUFFIX,picacgp.com
+  - DOMAIN-SUFFIX,cg51.com
